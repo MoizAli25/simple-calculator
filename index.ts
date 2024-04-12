@@ -4,12 +4,12 @@ import inquirer from "inquirer";
 
 const asnwer = await inquirer.prompt([
   {
-    message: "Enter first number",
+    message: "Enter your first number",
     type: "number",
     name: "firstnumber",
   },
   {
-    message: "Enter second number",
+    message: "Enter your second number",
     type: "number",
     name: "secondnumber",
   },
@@ -34,3 +34,4 @@ if (asnwer.operator === "addition") {
 } else {
   console.log("please select valid number");
 }
+console.log("THE END")
