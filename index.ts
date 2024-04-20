@@ -2,6 +2,10 @@
 
 import inquirer from "inquirer";
 
+import chalk from "chalk";
+
+console.log(chalk.cyan.bold.underline("\n \t WELCOME TO MOIZ SIMPLE CALCULATOR \t \n"))
+
 const asnwer = await inquirer.prompt([
   {
     message: "Enter your first number",
@@ -34,4 +38,4 @@ if (asnwer.operator === "addition") {
 } else {
   console.log("please select valid number");
 }
-console.log("THE END")
+console.log(chalk.red.bold("\n\tTHE END\t\n"))
